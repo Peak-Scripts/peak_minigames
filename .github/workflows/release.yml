@@ -66,7 +66,7 @@ jobs:
           mkdir -p ./temp/peak_minigames
           mkdir -p ./temp/peak_minigames/web
           cp ./{LICENSE,fxmanifest.lua} ./temp/peak_minigames
-          cp -r ./{client} ./temp/peak_minigames
+          cp -r ./client ./temp/peak_minigames
           cp -r ./web/build ./temp/peak_minigames/web/build
           cd ./temp && zip -r ../peak_minigames.zip ./peak_minigames
 
