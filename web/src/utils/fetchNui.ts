@@ -1,7 +1,7 @@
 
 const fetch = window.fetch;
-window.fetch = () => {};
-window.XMLHttpRequest = window.fetch;
+window.fetch = () => Promise.reject(new Error('fetch is disabled'));
+window.XMLHttpRequest = class {} as any;
 
 export async function fetchNui<T = any>(eventName: string, data?: any): Promise<T> {
   const options = {
