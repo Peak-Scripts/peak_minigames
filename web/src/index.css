@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 216 28% 7%;
+    --foreground: 210 17% 82%;
+    --muted: 216 12% 15%;
+    --muted-foreground: 216 12% 65%;
+    --popover: 216 28% 4%;
+    --popover-foreground: 210 17% 92%;
+    --card: 216 28% 5%;
+    --card-foreground: 210 17% 87%;
+    --border: 216 18% 12%;
+    --input: 216 18% 15%;
+    --primary: 210 17% 82%;
+    --primary-foreground: 210 17% 22%;
+    --secondary: 210 7% 25%;
+    --secondary-foreground: 210 7% 85%;
+    --accent: 216 28% 22%;
+    --accent-foreground: 216 28% 82%;
+    --destructive: 1 95% 59%;
+    --destructive-foreground: 0 0% 100%;
+    --ring: 210 17% 82%;
+    --chart-1: 210 17% 82%;
+    --chart-2: 210 7% 25%;
+    --chart-3: 216 28% 22%;
+    --chart-4: 210 7% 28%;
+    --chart-5: 210 20% 82%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 216 28% 7%;
+    --foreground: 210 17% 82%;
+    --muted: 216 12% 15%;
+    --muted-foreground: 216 12% 65%;
+    --popover: 216 28% 4%;
+    --popover-foreground: 210 17% 92%;
+    --card: 216 28% 5%;
+    --card-foreground: 210 17% 87%;
+    --border: 216 18% 12%;
+    --input: 216 18% 15%;
+    --primary: 210 17% 82%;
+    --primary-foreground: 210 17% 22%;
+    --secondary: 210 7% 25%;
+    --secondary-foreground: 210 7% 85%;
+    --accent: 216 28% 22%;
+    --accent-foreground: 216 28% 82%;
+    --destructive: 1 95% 59%;
+    --destructive-foreground: 0 0% 100%;
+    --ring: 210 17% 82%;
+    --chart-1: 210 17% 82%;
+    --chart-2: 210 7% 25%;
+    --chart-3: 216 28% 22%;
+    --chart-4: 210 7% 28%;
+    --chart-5: 210 20% 82%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  @media (min-width: 1920px) and (max-width: 2559px) {
+    html {
+      transform: scale(0.85);
+      transform-origin: top left;
+      width: 117.65%;
+      height: 117.65%;
+      overflow: hidden;
+    }
+    
+    body {
+      width: 117.65%;
+      height: 117.65%;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+    }
+    
+    #root {
+      width: 117.65%;
+      height: 117.65%;
+      overflow: hidden;
+    }
+  }
+  
+  @media (min-width: 3840px) {
+    html {
+      transform: scale(1.5);
+      transform-origin: top left;
+      width: 66.67%;
+      height: 66.67%;
+      overflow: hidden;
+    }
+    
+    body {
+      width: 66.67%;
+      height: 66.67%;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+    }
+    
+    #root {
+      width: 66.67%;
+      height: 66.67%;
+      overflow: hidden;
+    }
+  }
+}
+
+.progress-bar-fill {
+  transform-origin: left;
+  will-change: transform;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
